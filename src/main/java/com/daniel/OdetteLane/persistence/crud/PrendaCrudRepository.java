@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+//@Repository
 public interface PrendaCrudRepository extends CrudRepository<Prenda,Integer> {
     //@Query(value = "SELECT * FROM Prenda WHERE Co_idPrenda = ?", nativeQuery = true)
     //List<Prenda> getByCategoriaETC...(int idPrenda);

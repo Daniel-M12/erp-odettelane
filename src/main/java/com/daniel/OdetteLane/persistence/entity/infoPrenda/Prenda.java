@@ -20,6 +20,10 @@ public class Prenda {
     @Column(name = "\"Tx_Descripcion\"")
     private String descripcionPrenda;
 
+    @ManyToOne
+    @JoinColumn(name = "\"Co_Modelo\"", insertable = false, updatable = false)
+    private Modelo modelo;
+
     public Integer getIdPrenda() {
         return idPrenda;
     }
@@ -60,4 +64,11 @@ public class Prenda {
         this.descripcionPrenda = descripcionPrenda;
     }
 
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
+    }
 }

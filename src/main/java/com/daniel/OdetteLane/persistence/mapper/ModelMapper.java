@@ -20,5 +20,6 @@ public interface ModelMapper {
     List<Model> toModels(List<Modelo> modelo);
     @InheritInverseConfiguration
     @Mapping(target = "tipoPrenda", ignore = true)
+    @Mapping(target = "prendas", ignore = true)
     Modelo toModelo(Model model);
 }

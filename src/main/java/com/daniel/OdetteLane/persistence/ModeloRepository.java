@@ -5,6 +5,7 @@ import com.daniel.OdetteLane.domain.repository.ModelRepository;
 import com.daniel.OdetteLane.persistence.crud.ModeloCrudRepository;
 import com.daniel.OdetteLane.persistence.entity.infoPrenda.Modelo;
 import com.daniel.OdetteLane.persistence.mapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,7 +13,9 @@ import java.util.Optional;
 
 @Repository
 public class ModeloRepository implements ModelRepository {
+    @Autowired
     private ModeloCrudRepository modeloCrudRepository;
+    @Autowired
     private ModelMapper mapper;
     @Override
     public List<Model> getAll() {

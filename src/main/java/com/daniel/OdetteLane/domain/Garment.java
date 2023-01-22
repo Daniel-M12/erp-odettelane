@@ -8,6 +8,7 @@ public class Garment {
     private int sizeId;
     private BigDecimal cost;
     private String description;
+    private Model model;
 
     public int getGarmentId() {
         return garmentId;
@@ -47,5 +48,13 @@ public class Garment {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Model getModel() {
+        return model;
+    }
+
+    public void setModel(Model model) {
+        this.model = model;
     }
 }

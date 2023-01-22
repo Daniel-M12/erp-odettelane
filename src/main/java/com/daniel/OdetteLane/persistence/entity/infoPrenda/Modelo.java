@@ -2,6 +2,8 @@ package com.daniel.OdetteLane.persistence.entity.infoPrenda;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "\"Modelo_Prenda\"")
 public class Modelo {
@@ -15,6 +17,9 @@ public class Modelo {
     private String descripcion;
     @Column(name = "\"Co_idTipo\"")
     private Integer tipoPrenda;
+
+    @OneToMany(mappedBy = "modelo", cascade = CascadeType.ALL)
+    private List<Prenda> prendas;
 
     public Integer getModeloId() {
         return modeloId;
@@ -46,5 +51,13 @@ public class Modelo {
 
     public void setTipoPrenda(Integer tipoPrenda) {
         this.tipoPrenda = tipoPrenda;
+    }
+
+    public List<Prenda> getPrendas() {
+        return prendas;
+    }
+
+    public void setPrendas(List<Prenda> prendas) {
+        this.prendas = prendas;
     }
 }

@@ -10,7 +10,7 @@ import java.util.Optional;
 @Repository
 public interface ModelRepository {
     List<Model> getAll();
-    Optional<Model> getModel(int ModelId);
+    Optional<Model> getModel(int modelId);
     Model save(Model model);
     void delete(int modelId);
 }

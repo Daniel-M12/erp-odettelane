@@ -1,6 +1,6 @@
 package com.daniel.OdetteLane.web.controller;
 
-import com.daniel.OdetteLane.domain.Garment;
+import com.daniel.OdetteLane.domain.entities.Garment;
 import com.daniel.OdetteLane.domain.service.GarmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/garments")

@@ -1,4 +1,4 @@
-package com.daniel.OdetteLane.domain;
+package com.daniel.OdetteLane.domain.entities;
 
 public class Model {
     private int modelId;

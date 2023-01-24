@@ -1,6 +1,6 @@
 package com.daniel.OdetteLane.domain.service;
 
-import com.daniel.OdetteLane.domain.Model;
+import com.daniel.OdetteLane.domain.entities.Model;
 import com.daniel.OdetteLane.domain.repository.ModelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -20,6 +20,9 @@ public class Modelo {
 
     @OneToMany(mappedBy = "modelo", cascade = CascadeType.ALL)
     private List<Prenda> prendas;
+    @ManyToOne
+    @JoinColumn(name = "\"Co_idTipo\"", insertable = false, updatable = false)
+    private TipoPrenda tipo;
 
     public Integer getModeloId() {
         return modeloId;

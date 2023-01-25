@@ -4,6 +4,7 @@ public class Model {
     private int modelId;
     private String model;
     private String description;
+    private GarmentType garmentType;
 
     public int getModelId() {
         return modelId;
@@ -27,5 +28,13 @@ public class Model {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public GarmentType getGarmentType() {
+        return garmentType;
+    }
+
+    public void setGarmentType(GarmentType garmentType) {
+        this.garmentType = garmentType;
     }
 }

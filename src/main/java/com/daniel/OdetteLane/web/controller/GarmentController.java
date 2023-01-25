@@ -36,7 +36,9 @@ public class GarmentController {
 
     @PostMapping("/save")
     public ResponseEntity<Garment> save(@RequestBody Garment garment){
-        return new ResponseEntity<>(garmentService.save(garment),HttpStatus.OK);
+        return (garment != null) ?
+                (new ResponseEntity<>(garmentService.save(garment),HttpStatus.OK))
+                : (new ResponseEntity<>(HttpStatus.NO_CONTENT));
     }
 
     @DeleteMapping("/delete/{id}")

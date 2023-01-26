@@ -9,17 +9,18 @@ import org.mapstruct.Mappings;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = {GarmentTypeMapper.class})
 public interface ModelMapper {
     @Mappings({
             @Mapping(source = "modeloId", target = "modelId"),
             @Mapping(source = "nombreModelo", target = "model"),
             @Mapping(source = "descripcion", target = "description"),
+            @Mapping(target = "garmentTypeId", source = "idTipoPrenda"),
+            @Mapping(source = "tipoPrenda", target = "garmentType"),
     })
     Model toModel(Modelo modelo);
     List<Model> toModels(List<Modelo> modelo);
     @InheritInverseConfiguration
-    @Mapping(target = "tipoPrenda", ignore = true)
     @Mapping(target = "prendas", ignore = true)
     Modelo toModelo(Model model);
 }

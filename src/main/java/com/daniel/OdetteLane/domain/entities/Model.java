@@ -4,6 +4,7 @@ public class Model {
     private int modelId;
     private String model;
     private String description;
+    private int garmentTypeId;
     private GarmentType garmentType;
 
     public int getModelId() {
@@ -36,5 +37,13 @@ public class Model {
 
     public void setGarmentType(GarmentType garmentType) {
         this.garmentType = garmentType;
+    }
+
+    public int getGarmentTypeId() {
+        return garmentTypeId;
+    }
+
+    public void setGarmentTypeId(int garmentTypeId) {
+        this.garmentTypeId = garmentTypeId;
     }
 }

@@ -16,7 +16,7 @@ public class TipoPrenda {
     @Column(name = "\"Tx_Descripcion\"")
     private String descripcion;
 
-    @OneToMany(mappedBy = "tipo", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "tipoPrenda", cascade = CascadeType.ALL)
     private List<Modelo> modelos;
 
     public Integer getIdTipoPrenda() {

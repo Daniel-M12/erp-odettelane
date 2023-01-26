@@ -16,13 +16,13 @@ public class Modelo {
     @Column(name = "\"Tx_Descripcion\"")
     private String descripcion;
     @Column(name = "\"Co_idTipo\"")
-    private Integer tipoPrenda;
+    private Integer idTipoPrenda;
 
     @OneToMany(mappedBy = "modelo", cascade = CascadeType.ALL)
     private List<Prenda> prendas;
     @ManyToOne
     @JoinColumn(name = "\"Co_idTipo\"", insertable = false, updatable = false)
-    private TipoPrenda tipo;
+    private TipoPrenda tipoPrenda;
 
     public Integer getModeloId() {
         return modeloId;
@@ -48,12 +48,12 @@ public class Modelo {
         this.descripcion = descripcion;
     }
 
-    public Integer getTipoPrenda() {
-        return tipoPrenda;
+    public Integer getIdTipoPrenda() {
+        return idTipoPrenda;
     }
 
-    public void setTipoPrenda(Integer tipoPrenda) {
-        this.tipoPrenda = tipoPrenda;
+    public void setIdTipoPrenda(Integer idTipoPrenda) {
+        this.idTipoPrenda = idTipoPrenda;
     }
 
     public List<Prenda> getPrendas() {
@@ -62,5 +62,13 @@ public class Modelo {
 
     public void setPrendas(List<Prenda> prendas) {
         this.prendas = prendas;
+    }
+
+    public TipoPrenda getTipoPrenda() {
+        return tipoPrenda;
+    }
+
+    public void setTipoPrenda(TipoPrenda tipoPrenda) {
+        this.tipoPrenda = tipoPrenda;
     }
 }

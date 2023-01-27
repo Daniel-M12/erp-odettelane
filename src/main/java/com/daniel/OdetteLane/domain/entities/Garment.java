@@ -1,4 +1,4 @@
-package com.daniel.OdetteLane.domain;
+package com.daniel.OdetteLane.domain.entities;
 
 import java.math.BigDecimal;
 
@@ -8,6 +8,8 @@ public class Garment {
     private int sizeId;
     private BigDecimal cost;
     private String description;
+    private Model model;
+    private Size size;
 
     public int getGarmentId() {
         return garmentId;
@@ -47,5 +49,21 @@ public class Garment {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Model getModel() {
+        return model;
+    }
+
+    public void setModel(Model model) {
+        this.model = model;
+    }
+
+    public Size getSize() {
+        return size;
+    }
+
+    public void setSize(Size size) {
+        this.size = size;
     }
 }

@@ -1,6 +1,6 @@
-package com.daniel.OdetteLane.persistence;
+package com.daniel.OdetteLane.persistence.repository;
 
-import com.daniel.OdetteLane.domain.Garment;
+import com.daniel.OdetteLane.domain.entities.Garment;
 import com.daniel.OdetteLane.domain.repository.GarmentRepository;
 import com.daniel.OdetteLane.persistence.crud.PrendaCrudRepository;
 import com.daniel.OdetteLane.persistence.entity.infoPrenda.Prenda;

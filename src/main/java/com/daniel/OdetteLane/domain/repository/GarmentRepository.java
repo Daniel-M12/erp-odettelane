@@ -1,6 +1,6 @@
 package com.daniel.OdetteLane.domain.repository;
 
-import com.daniel.OdetteLane.domain.Garment;
+import com.daniel.OdetteLane.domain.entities.Garment;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;

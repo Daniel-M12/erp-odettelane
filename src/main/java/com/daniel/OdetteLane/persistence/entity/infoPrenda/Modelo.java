@@ -10,7 +10,7 @@ public class Modelo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "\"Co_idModelo\"")
-    private Integer modeloId;
+    private Integer IdModelo;
     @Column(name = "\"No_Modelo\"")
     private String nombreModelo;
     @Column(name = "\"Tx_Descripcion\"")
@@ -24,12 +24,12 @@ public class Modelo {
     @JoinColumn(name = "\"Co_idTipo\"", insertable = false, updatable = false)
     private TipoPrenda tipoPrenda;
 
-    public Integer getModeloId() {
-        return modeloId;
+    public Integer getIdModelo() {
+        return IdModelo;
     }
 
-    public void setModeloId(Integer modeloId) {
-        this.modeloId = modeloId;
+    public void setIdModelo(Integer idModelo) {
+        this.IdModelo = idModelo;
     }
 
     public String getNombreModelo() {

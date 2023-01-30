@@ -1,6 +1,6 @@
 package com.daniel.OdetteLane.web.controller;
 
-import com.daniel.OdetteLane.domain.entities.Garment;
+import com.daniel.OdetteLane.domain.entities.garment.Garment;
 import com.daniel.OdetteLane.domain.service.GarmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

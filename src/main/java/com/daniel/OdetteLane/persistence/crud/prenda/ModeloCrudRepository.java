@@ -1,4 +1,4 @@
-package com.daniel.OdetteLane.persistence.crud;
+package com.daniel.OdetteLane.persistence.crud.prenda;
 
 import com.daniel.OdetteLane.persistence.entity.infoPrenda.Modelo;
 import org.springframework.data.repository.CrudRepository;

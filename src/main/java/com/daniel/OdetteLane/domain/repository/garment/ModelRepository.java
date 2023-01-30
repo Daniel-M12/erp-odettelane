@@ -1,7 +1,7 @@
-package com.daniel.OdetteLane.domain.repository;
+package com.daniel.OdetteLane.domain.repository.garment;
 
 
-import com.daniel.OdetteLane.domain.entities.Model;
+import com.daniel.OdetteLane.domain.entities.garment.Model;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

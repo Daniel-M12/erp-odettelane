@@ -1,11 +1,10 @@
-package com.daniel.OdetteLane.persistence.repository;
+package com.daniel.OdetteLane.persistence.repository.prenda;
 
-import com.daniel.OdetteLane.domain.entities.GarmentType;
-import com.daniel.OdetteLane.domain.repository.GarmentTypeRepository;
-import com.daniel.OdetteLane.persistence.crud.TallaCrudRepository;
-import com.daniel.OdetteLane.persistence.crud.TipoPrendaCrudRepository;
+import com.daniel.OdetteLane.domain.entities.garment.GarmentType;
+import com.daniel.OdetteLane.domain.repository.garment.GarmentTypeRepository;
+import com.daniel.OdetteLane.persistence.crud.prenda.TipoPrendaCrudRepository;
 import com.daniel.OdetteLane.persistence.entity.infoPrenda.TipoPrenda;
-import com.daniel.OdetteLane.persistence.mapper.GarmentTypeMapper;
+import com.daniel.OdetteLane.persistence.mapper.garment.GarmentTypeMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

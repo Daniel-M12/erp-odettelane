@@ -1,11 +1,10 @@
 package com.daniel.OdetteLane.web.controller;
 
-import com.daniel.OdetteLane.domain.entities.Size;
+import com.daniel.OdetteLane.domain.entities.garment.Size;
 import com.daniel.OdetteLane.domain.service.SizeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

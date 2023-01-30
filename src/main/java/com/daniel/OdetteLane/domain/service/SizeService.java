@@ -1,7 +1,7 @@
 package com.daniel.OdetteLane.domain.service;
 
-import com.daniel.OdetteLane.domain.entities.Size;
-import com.daniel.OdetteLane.domain.repository.SizeRepository;
+import com.daniel.OdetteLane.domain.entities.garment.Size;
+import com.daniel.OdetteLane.domain.repository.garment.SizeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

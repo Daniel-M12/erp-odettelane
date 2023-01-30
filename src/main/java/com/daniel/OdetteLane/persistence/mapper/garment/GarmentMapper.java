@@ -1,6 +1,6 @@
-package com.daniel.OdetteLane.persistence.mapper;
+package com.daniel.OdetteLane.persistence.mapper.garment;
 
-import com.daniel.OdetteLane.domain.entities.Garment;
+import com.daniel.OdetteLane.domain.entities.garment.Garment;
 import com.daniel.OdetteLane.persistence.entity.infoPrenda.Prenda;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;

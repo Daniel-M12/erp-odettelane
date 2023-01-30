@@ -1,4 +1,4 @@
-package com.daniel.OdetteLane.domain.entities;
+package com.daniel.OdetteLane.domain.entities.garment;
 
 import java.math.BigDecimal;
 

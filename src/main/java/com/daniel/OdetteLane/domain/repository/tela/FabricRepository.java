@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface fabricRepository {
+public interface FabricRepository {
     List<Fabric> getAll();
     Optional<Fabric> getFabric(int fabricId);
     Fabric save(Fabric fabric);

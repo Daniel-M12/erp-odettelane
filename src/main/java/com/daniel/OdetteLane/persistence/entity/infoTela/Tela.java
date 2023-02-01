@@ -22,4 +22,52 @@ public class Tela {
     private Integer idMaterial;
     @Column(name = "\"Co_Color\"")
     private Integer idColor;
+
+    public Integer getIdTela() {
+        return idTela;
+    }
+
+    public void setIdTela(Integer idTela) {
+        this.idTela = idTela;
+    }
+
+    public String getTela() {
+        return tela;
+    }
+
+    public void setTela(String tela) {
+        this.tela = tela;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Integer getIdTipoTela() {
+        return idTipoTela;
+    }
+
+    public void setIdTipoTela(Integer idTipoTela) {
+        this.idTipoTela = idTipoTela;
+    }
+
+    public Integer getIdMaterial() {
+        return idMaterial;
+    }
+
+    public void setIdMaterial(Integer idMaterial) {
+        this.idMaterial = idMaterial;
+    }
+
+    public Integer getIdColor() {
+        return idColor;
+    }
+
+    public void setIdColor(Integer idColor) {
+        this.idColor = idColor;
+    }
 }

@@ -1,4 +1,4 @@
-package com.daniel.OdetteLane.domain.service;
+package com.daniel.OdetteLane.domain.service.garment;
 
 import com.daniel.OdetteLane.domain.entities.garment.GarmentType;
 import com.daniel.OdetteLane.domain.repository.garment.GarmentTypeRepository;

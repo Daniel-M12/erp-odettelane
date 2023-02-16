@@ -1,12 +1,10 @@
 package com.daniel.OdetteLane.persistence.entity.infoTela;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Entity
+@Table(name = "\"Tela\"")
 public class Tela {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

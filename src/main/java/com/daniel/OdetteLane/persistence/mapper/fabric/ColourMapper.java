@@ -15,8 +15,9 @@ public interface ColourMapper {
             @Mapping(source = "idColor", target = "colourId"),
             @Mapping(source = "nombre", target = "colour")
     })
-    public Colour toColour(Color color);
+    Colour toColour(Color color);
     List<Colour> toColours(List<Color> colores);
     @InheritInverseConfiguration
-    public Color toColor(Colour colour);
+    @Mapping(target = "telas", ignore = true)
+    Color toColor(Colour colour);
 }

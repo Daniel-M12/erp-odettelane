@@ -6,10 +6,12 @@ import com.daniel.OdetteLane.persistence.crud.tela.ColorCrudRepository;
 import com.daniel.OdetteLane.persistence.entity.infoTela.Color;
 import com.daniel.OdetteLane.persistence.mapper.fabric.ColourMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class ColorRepository implements ColourRepository {
     @Autowired
     private ColorCrudRepository colorCrudRepository;

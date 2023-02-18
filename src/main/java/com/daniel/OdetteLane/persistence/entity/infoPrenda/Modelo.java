@@ -10,7 +10,7 @@ public class Modelo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "\"Co_idModelo\"")
-    private Integer IdModelo;
+    private Integer idModelo;
     @Column(name = "\"No_Modelo\"")
     private String nombreModelo;
     @Column(name = "\"Tx_Descripcion\"")
@@ -25,11 +25,11 @@ public class Modelo {
     private TipoPrenda tipoPrenda;
 
     public Integer getIdModelo() {
-        return IdModelo;
+        return idModelo;
     }
 
     public void setIdModelo(Integer idModelo) {
-        this.IdModelo = idModelo;
+        this.idModelo = idModelo;
     }
 
     public String getNombreModelo() {

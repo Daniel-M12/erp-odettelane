@@ -2,6 +2,8 @@ package com.daniel.OdetteLane.persistence.entity.infoTela;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "\"Color\"")
 public class Color {
@@ -11,6 +13,9 @@ public class Color {
     private Integer idColor;
     @Column(name = "\"No_Color\"")
     private String nombre;
+
+    @OneToMany(mappedBy = "color", cascade = CascadeType.ALL)
+    private List<Tela> telas;
 
     public Integer getIdColor() {
         return idColor;
@@ -26,5 +31,13 @@ public class Color {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public List<Tela> getTelas() {
+        return telas;
+    }
+
+    public void setTelas(List<Tela> telas) {
+        this.telas = telas;
     }
 }

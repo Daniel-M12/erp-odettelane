@@ -25,6 +25,10 @@ public class Tela {
     @JoinColumn(name = "\"Co_Color\"", insertable = false, updatable = false)
     private Color color;
 
+    @ManyToOne
+    @JoinColumn(name = "\"Co_TipoTela\"", insertable = false, updatable = false)
+    private TipoTela tipoTela;
+
     public Integer getIdTela() {
         return idTela;
     }
@@ -79,5 +83,13 @@ public class Tela {
 
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    public TipoTela getTipoTela() {
+        return tipoTela;
+    }
+
+    public void setTipoTela(TipoTela tipoTela) {
+        this.tipoTela = tipoTela;
     }
 }

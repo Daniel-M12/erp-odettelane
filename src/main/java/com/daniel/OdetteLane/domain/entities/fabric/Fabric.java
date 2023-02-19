@@ -4,11 +4,12 @@ public class Fabric {
     private int fabricId;
     private String fabricName;
     private String description;
-    private int fabricType;
+    private int fabricTypeId;
     private int materialId;
     private int colorId;
 
     private Colour colour;
+    private FabricType fabricType;
 
     public int getFabricId() {
         return fabricId;
@@ -34,12 +35,12 @@ public class Fabric {
         this.description = description;
     }
 
-    public int getFabricType() {
-        return fabricType;
+    public int getFabricTypeId() {
+        return fabricTypeId;
     }
 
-    public void setFabricType(int fabricType) {
-        this.fabricType = fabricType;
+    public void setFabricTypeId(int fabricTypeId) {
+        this.fabricTypeId = fabricTypeId;
     }
 
     public int getMaterialId() {
@@ -64,5 +65,13 @@ public class Fabric {
 
     public void setColour(Colour colour) {
         this.colour = colour;
+    }
+
+    public FabricType getFabricType() {
+        return fabricType;
+    }
+
+    public void setFabricType(FabricType fabricType) {
+        this.fabricType = fabricType;
     }
 }

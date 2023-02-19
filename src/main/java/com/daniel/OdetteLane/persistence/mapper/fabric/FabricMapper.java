@@ -9,16 +9,17 @@ import org.mapstruct.Mappings;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = {ColourMapper.class})
+@Mapper(componentModel = "spring", uses = {ColourMapper.class, FabricTypeMapper.class})
 public interface FabricMapper {
     @Mappings({
             @Mapping(source = "idTela", target = "fabricId"),
             @Mapping(source = "tela", target = "fabricName"),
             @Mapping(source = "descripcion", target = "description"),
-            @Mapping(source = "idTipoTela", target = "fabricType"),
+            @Mapping(source = "idTipoTela", target = "fabricTypeId"),
             @Mapping(source = "idMaterial", target = "materialId"),
             @Mapping(source = "idColor", target = "colorId"),
-            @Mapping(source = "color", target = "colour")
+            @Mapping(source = "color", target = "colour"),
+            @Mapping(source = "tipoTela", target = "fabricType")
     })
     Fabric toFabric(Tela tela);
     List<Fabric> toFabrics(List<Tela> telas);

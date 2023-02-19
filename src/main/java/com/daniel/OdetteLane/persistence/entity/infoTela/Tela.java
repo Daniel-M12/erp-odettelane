@@ -1,7 +1,6 @@
 package com.daniel.OdetteLane.persistence.entity.infoTela;
 
 import jakarta.persistence.*;
-import org.springframework.stereotype.Repository;
 
 @Entity
 @Table(name = "\"Tela\"")
@@ -28,6 +27,9 @@ public class Tela {
     @ManyToOne
     @JoinColumn(name = "\"Co_TipoTela\"", insertable = false, updatable = false)
     private TipoTela tipoTela;
+    @ManyToOne
+    @JoinColumn(name = "\"Co_Material\"", insertable = false, updatable = false)
+    private MaterialTela materialTela;
 
     public Integer getIdTela() {
         return idTela;
@@ -91,5 +93,13 @@ public class Tela {
 
     public void setTipoTela(TipoTela tipoTela) {
         this.tipoTela = tipoTela;
+    }
+
+    public MaterialTela getMaterialTela() {
+        return materialTela;
+    }
+
+    public void setMaterialTela(MaterialTela materialTela) {
+        this.materialTela = materialTela;
     }
 }

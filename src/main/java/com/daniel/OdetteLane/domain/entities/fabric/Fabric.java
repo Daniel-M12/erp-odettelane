@@ -10,6 +10,7 @@ public class Fabric {
 
     private Colour colour;
     private FabricType fabricType;
+    private FabricMaterial fabricMaterial;
 
     public int getFabricId() {
         return fabricId;
@@ -73,5 +74,13 @@ public class Fabric {
 
     public void setFabricType(FabricType fabricType) {
         this.fabricType = fabricType;
+    }
+
+    public FabricMaterial getFabricMaterial() {
+        return fabricMaterial;
+    }
+
+    public void setFabricMaterial(FabricMaterial fabricMaterial) {
+        this.fabricMaterial = fabricMaterial;
     }
 }

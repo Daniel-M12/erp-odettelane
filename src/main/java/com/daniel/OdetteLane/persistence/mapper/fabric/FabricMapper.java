@@ -26,6 +26,7 @@ public interface FabricMapper {
     List<Fabric> toFabrics(List<Tela> telas);
 
     @InheritInverseConfiguration
+    @Mapping(target = "prendas", ignore = true)
     Tela toTela(Fabric fabric);
     //List<Tela> toTelas(List<Fabric> fabrics);
 }

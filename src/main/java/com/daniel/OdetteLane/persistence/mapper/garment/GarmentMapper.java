@@ -9,7 +9,7 @@ import org.mapstruct.Mappings;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = {ModelMapper.class, SizeMapper.class})
+@Mapper(componentModel = "spring", uses = {ModelMapper.class, SizeMapper.class, GarmentFabricMapper.class})
 public interface GarmentMapper {
     @Mappings({
             @Mapping(source = "idPrenda", target = "garmentId"),
@@ -19,6 +19,7 @@ public interface GarmentMapper {
             @Mapping(source = "descripcionPrenda", target = "description"),
             @Mapping(source = "modelo", target = "model"),
             @Mapping(source = "talla", target = "size"),
+            @Mapping(source = "telas", target = "fabrics")
     })
     Garment toGarment(Prenda prenda);
     List<Garment> toGarments(List<Prenda> prendas);

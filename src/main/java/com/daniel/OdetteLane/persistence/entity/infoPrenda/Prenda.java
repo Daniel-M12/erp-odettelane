@@ -1,8 +1,10 @@
 package com.daniel.OdetteLane.persistence.entity.infoPrenda;
 
+import com.daniel.OdetteLane.persistence.entity.infoPrenda.TelaPrenda.TelaPrenda;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
 @Table(name = "\"Prenda\"")
@@ -23,10 +25,12 @@ public class Prenda {
     @ManyToOne
     @JoinColumn(name = "\"Co_Modelo\"", insertable = false, updatable = false)
     private Modelo modelo;
-
     @ManyToOne
     @JoinColumn(name = "\"Co_Talla\"", insertable = false, updatable = false)
     private Talla talla;
+
+    @OneToMany(mappedBy = "prenda", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<TelaPrenda> telas;
 
     public Integer getIdPrenda() {
         return idPrenda;
@@ -82,5 +86,13 @@ public class Prenda {
 
     public void setTalla(Talla talla) {
         this.talla = talla;
+    }
+
+    public List<TelaPrenda> getTelas() {
+        return telas;
+    }
+
+    public void setTelas(List<TelaPrenda> telas) {
+        this.telas = telas;
     }
 }

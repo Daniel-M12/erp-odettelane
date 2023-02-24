@@ -1,6 +1,9 @@
 package com.daniel.OdetteLane.persistence.entity.infoTela;
 
+import com.daniel.OdetteLane.persistence.entity.infoPrenda.TelaPrenda.TelaPrenda;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "\"Tela\"")
@@ -30,6 +33,9 @@ public class Tela {
     @ManyToOne
     @JoinColumn(name = "\"Co_Material\"", insertable = false, updatable = false)
     private MaterialTela materialTela;
+
+    @OneToMany(mappedBy = "tela", cascade = CascadeType.ALL)
+    private List<TelaPrenda> prendas;
 
     public Integer getIdTela() {
         return idTela;
@@ -101,5 +107,13 @@ public class Tela {
 
     public void setMaterialTela(MaterialTela materialTela) {
         this.materialTela = materialTela;
+    }
+
+    public List<TelaPrenda> getPrendas() {
+        return prendas;
+    }
+
+    public void setPrendas(List<TelaPrenda> prendas) {
+        this.prendas = prendas;
     }
 }

@@ -1,6 +1,7 @@
 package com.daniel.OdetteLane.domain.entities.garment;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class Garment {
     private int garmentId;
@@ -10,6 +11,8 @@ public class Garment {
     private String description;
     private Model model;
     private Size size;
+
+    private List<GarmentFabric> fabrics;
 
     public int getGarmentId() {
         return garmentId;
@@ -65,5 +68,13 @@ public class Garment {
 
     public void setSize(Size size) {
         this.size = size;
+    }
+
+    public List<GarmentFabric> getFabrics() {
+        return fabrics;
+    }
+
+    public void setFabrics(List<GarmentFabric> fabrics) {
+        this.fabrics = fabrics;
     }
 }
